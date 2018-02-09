@@ -54,7 +54,7 @@ public class DebugDBInitProvider extends ContentProvider {
             throw new NullPointerException("DebugDBInitProvider ProviderInfo cannot be null.");
         }
         // So if the authorities equal the library internal ones, the developer forgot to set his applicationId
-        if ("com.amitshekhar.DebugDBInitProvider".equals(providerInfo.authority)) {
+        if ("com.mobtexting.androiddb.DebugDBInitProvider".equals(providerInfo.authority)) {
             throw new IllegalStateException("Incorrect provider authority in manifest. Most likely due to a "
                     + "missing applicationId variable in application\'s build.gradle.");
         }
