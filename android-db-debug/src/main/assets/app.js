@@ -58,7 +58,6 @@ function downloadDb() {
     }
 }
 
-
 function getDBList() {
 
    $.ajax({url: "getDbList", success: function(result){
